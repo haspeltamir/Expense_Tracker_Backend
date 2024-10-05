@@ -36,12 +36,12 @@ const usersResolver = {
         users: () => {
             return UsersDB;
         },
-        // user: (_, { id }) => {
-        //     return UsersDB.find(user => user._id === id);
-        // }
-        user: (_, args) => {
-            return UsersDB.find(user => user._id === args.id);
+        user: (_, { id }) => {
+            return UsersDB.find(user => user._id === id);
         }
+        // user: (_, args) => {
+        //     return UsersDB.find(user => user._id === args.id);
+        // }
         // authUser: () => {
         //     return users[0];
         // }
