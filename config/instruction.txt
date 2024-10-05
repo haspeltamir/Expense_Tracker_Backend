@@ -1,0 +1,8 @@
+the "default.json" file in the config folder contains the configuration Template for all the settings inside the application.
+
+create a new file called custom-environment-variables.json in the config folder.
+in this file, we will specify the Mapping between our Application settings and Environment Variables.
+
+and add the following code:
+
+

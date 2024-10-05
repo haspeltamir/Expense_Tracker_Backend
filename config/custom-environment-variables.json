@@ -1,0 +1,5 @@
+{
+  "jwtPrivateKey": "JWT_SECRET_KEY",
+  "db": "MONGO_URL",
+  "port": "PORT"
+}
