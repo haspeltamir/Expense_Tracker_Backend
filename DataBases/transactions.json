@@ -1,0 +1,72 @@
+[
+  {
+    "user": {
+      "_id": {
+        "$oid": "6701d8d09d247bae9817b04b"
+      },
+      "name": "User One"
+    },
+    "description": "Transaction One",
+    "paymentType": "CASH",
+    "category": "Category One",
+    "amount": 100.0,
+    "location": "Location One",
+    "date": "2024-01-01"
+  },
+  {
+    "user": {
+      "_id": {
+        "$oid": "6701d8d09d247bae9817b04a"
+      },
+      "name": "User Two"
+    },
+    "description": "Transaction Two",
+    "paymentType": "CARD",
+    "category": "Category Two",
+    "amount": 200.0,
+    "location": "Location Two",
+    "date": "2024-01-02"
+  },
+  {
+    "user": {
+      "_id": {
+        "$oid": "6701d8d09d247bae9817b049"
+      },
+      "name": "User Three"
+    },
+    "description": "Transaction Three",
+    "paymentType": "CASH",
+    "category": "Category Three",
+    "amount": 300.0,
+    "location": "Location Three",
+    "date": "2024-01-03"
+  },
+  {
+    "user": {
+      "_id": {
+        "$oid": "6701d8d09d247bae9817b048"
+      },
+      "name": "User Four"
+    },
+    "description": "Transaction Four",
+    "paymentType": "CARD",
+    "category": "Category Four",
+    "amount": 400.0,
+    "location": "Location Four",
+    "date": "2024-01-04"
+  },
+  {
+    "user": {
+      "_id": {
+        "$oid": "6701d8d09d247bae9817b04c"
+      },
+      "name": "User Five"
+    },
+    "description": "Transaction Five",
+    "paymentType": "CASH",
+    "category": "Category Five",
+    "amount": 500.0,
+    "location": "Location Five",
+    "date": "2024-01-05"
+  }
+]

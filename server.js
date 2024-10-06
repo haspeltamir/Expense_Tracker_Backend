@@ -62,10 +62,7 @@ app.use(
 
 
 
-
-
-
-const PORT = process.env.PORT; // Retrieve the port number from the configuration file
+const PORT = process.env.PORT;
 // Modified server startup
 await new Promise((resolve) =>
     httpServer.listen({ port: PORT }, resolve),

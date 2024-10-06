@@ -1,0 +1,37 @@
+[
+  {
+    "username": "user1",
+    "name": "User One",
+    "password": "password1",
+    "profilePicture": "profile1.jpg",
+    "gender": "male"
+  },
+  {
+    "username": "user2",
+    "name": "User Two",
+    "password": "password2",
+    "profilePicture": "profile2.jpg",
+    "gender": "female"
+  },
+  {
+    "username": "user3",
+    "name": "User Three",
+    "password": "password3",
+    "profilePicture": "profile3.jpg",
+    "gender": "male"
+  },
+  {
+    "username": "user4",
+    "name": "User Four",
+    "password": "password4",
+    "profilePicture": "profile4.jpg",
+    "gender": "female"
+  },
+  {
+    "username": "user5",
+    "name": "User Five",
+    "password": "password5",
+    "profilePicture": "profile5.jpg",
+    "gender": "male"
+  }
+]
