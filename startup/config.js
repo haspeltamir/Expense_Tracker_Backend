@@ -3,7 +3,7 @@ config.js is used to check if the jwtPrivateKey is defined in the environment va
 If it is not defined, the application will throw an error and stop the application.
 */
 
-const config = require('config');
+import config from 'config';
 
 module.exports = function () {
     // Check if the JWT Private Key is set in the environment variables

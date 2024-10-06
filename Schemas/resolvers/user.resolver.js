@@ -28,12 +28,23 @@ What are Resolvers?
         -   "logoutUser" Mutation will logout a user
 
 
+        * Resolvers Functions Parameters:
+            -   parent: The result of the previous resolver execution level.
+                    we will use it when we have nested resolvers.(Relations between types)
+            -   args: The arguments passed into the field in the query.
+                    we will use it to get the arguments passed to the query.
+            -   context: An object shared by all resolvers in a query.
+                    we will use it to share data between resolvers.
+            -   info: Contains information about the execution state of the query.
+                    we will use it to get the AST of the query.
 */
-import { UsersDB } from '../dummyData/data.js';
+import { UsersDB } from '../../dummyData/data.js';
 //With Dummy Data in an local js file:
 const usersResolver = {
     Query: {
-        users: () => {
+        users: (parent, args, context, info) => {
+            console.log("context.token", context.token);
+            console.log("context.res", context.res);
             return UsersDB;
         },
         user: (_, { id }) => {

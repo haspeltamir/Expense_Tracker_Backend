@@ -4,9 +4,9 @@ It also provides a validation function to validate user data.
 */
 
 import mongoose from 'mongoose';
-import Joi from 'joi';
-import jwt from 'jsonwebtoken';
-import config from 'config';
+// import Joi from 'joi';
+// import jwt from 'jsonwebtoken';
+// import config from 'config';
 
 // Mongoose Schema for User
 const userSchema = new mongoose.Schema({
@@ -45,30 +45,31 @@ const userSchema = new mongoose.Schema({
 );
 
 // Method to generate an authentication token for the user
-userSchema.methods.generateAuthToken = function () {
-    const token = jwt.sign({
-        _id: this._id,
-        isAdmin: this.isAdmin
-    }, config.get('jwtPrivateKey'));
-    return token;
-};
+// userSchema.methods.generateAuthToken = function () {
+//     const token = jwt.sign({
+//         _id: this._id,
+//         isAdmin: this.isAdmin
+//     }, config.get('jwtPrivateKey'));
+//     return token;
+// };
 
 // Mongoose Model for User
 const User = mongoose.model('User', userSchema);
 
 // Validation function for User input
-function validateUser(user) {
-    const schema = Joi.object({
-        name: Joi.string().min(5).max(50).required(),
-        password: Joi.string().min(5).max(1024).required(),
+// function validateUser(user) {
+//     const schema = Joi.object({
+//         name: Joi.string().min(5).max(50).required(),
+//         password: Joi.string().min(5).max(1024).required(),
 
-    });
-    return schema.validate(user);
-}
+//     });
+//     return schema.validate(user);
+// }
 
 //ways to export
 //1 Regular way
-export { User, validateUser };
+// export { User, validateUser };
+export { User };
 //to import do: import { User, validateUser } from './path_to_user.js';
 
 //2 Named Exports
